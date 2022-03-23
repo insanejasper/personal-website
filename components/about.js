@@ -3,14 +3,14 @@ import Image from 'next/image'
 export default function About() {
   return (
     <section className="mb-32">
-      <h2 className="mb-16 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
+      <h2 className="mb-16 text-6xl md:text-7xl font-bold tracking-tighter leading-tight font-serif">
           About
         </h2>
       <div className="md:grid md:grid-cols-3 md:gap-x-16 lg:gap-x-8">
-      <div>
+        <div className="items-center">
           <Image
             className="rounded-3xl"
-            src="/assets/img/header.jpg"
+            src="/assets/img/about.jpg"
             alt={`Cover Image for`}
             layout="responsive"
             width={900}
@@ -19,11 +19,17 @@ export default function About() {
         </div>
         <div className="col-span-2">
           <h3 className="text-center md:text-left text-4xl mt-5 ">
-            Quisque laoreet ipsum ultricies pulvinar sagittis. Vivamus lorem mi, semper ac nunc a, vehicula mattis eros. Sed pellentesque orci sodales ligula sollicitudin feugiat.
+            I'm Paras, a Software Engineer currently working remotely for <a href="https://pagerduty.com" className="underline underline-offset-8 decoration-pink-500" rel="noreferrer" target="_blank">PagerDuty</a>.
           </h3>
-          <h4 className="text-center md:text-left text-lg mt-5 ">
-            Aliquam hendrerit, est in pharetra rutrum, augue enim tempor augue, et laoreet massa neque vel odio. Cras et justo in massa egestas aliquam sed in leo. Nullam ut lectus a nulla convallis consectetur. Morbi aliquam sodales ante, et pellentesque dolor. Quisque laoreet ipsum ultricies pulvinar sagittis. Vivamus lorem mi, semper ac nunc a, vehicula mattis eros. Sed pellentesque orci sodales ligula sollicitudin feugiat. Morbi interdum finibus lacus eget hendrerit.
-          </h4>
+          <p className="text-center md:text-left text-lg mt-5 ">
+            I&apos;ve spent the past 5+ years working across different areas of software engineering; front-end development, back-end development, dev ops, to my current role providing developers tools needed to expand their systems.
+          </p>
+          <p className="text-center md:text-left text-lg mt-5 ">
+            Nowadays I spend my time coding, learning, researching, and collaborating.
+          </p>
+          <p className="text-center md:text-left text-lg mt-5 ">
+            Outside of work you'll find me playing video games, learning new recipes, exercising, and becoming a human pillow for my cat.
+          </p>
         </div>
       </div>
     </section>

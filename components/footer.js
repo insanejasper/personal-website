@@ -3,11 +3,11 @@ import { EXAMPLE_PATH } from '../lib/constants'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 dark:bg-neutral-900 border-t border-accent-2 dark:border-neutral-700">
+    <footer className="bg-neutral-200 dark:bg-neutral-800 border-t border-accent-2 dark:border-neutral-700">
       <Container>
         <div className="py-28 flex flex-col lg:flex-row items-center">
           <h3 className="text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
-            The conversation doesn't have to end.
+            The fun doesn't have to end.
           </h3>
           <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
             <a

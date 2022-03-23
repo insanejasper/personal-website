@@ -12,7 +12,7 @@ export default function HeroProject({
     <section>
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 items-center h-screen">
         <div className="mb-10 md:mb-0">
-          <h3 className="text-center md:text-left text-3xl mt-10 md:mt-0">
+          <h3 className="text-center md:text-left text-3xl mt-10 md:mt-0 font-serif">
             Hello! My name is
           </h3>
           <h1 className="text-center md:text-left text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
@@ -45,7 +45,7 @@ export default function HeroProject({
         <div>
           <Image
             className="rounded-3xl"
-            src="/assets/img/header.jpg"
+            src="/assets/img/headshot-b.jpg"
             alt={`Cover Image for ${title}`}
             layout="responsive"
             width={1240}

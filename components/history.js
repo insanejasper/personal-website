@@ -1,7 +1,7 @@
 export default function History() {
   return (
     <section className="mb-32">
-      <h2 className="mb-16 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
+      <h2 className="mb-16 text-6xl md:text-7xl font-bold tracking-tighter leading-tight font-serif">
           A Brief History
         </h2>
       <div className="md:grid md:grid-cols-7 grid-rows-3">
@@ -21,7 +21,7 @@ export default function History() {
 
 function HistoryItem({company, title, start, end}) {
   return (
-    <div className="bg-neutral-800 p-6 rounded-3xl mb-5">
+    <div className="bg-neutral-200 dark:bg-neutral-800 p-6 rounded-3xl mb-5">
       <div className="grid grid-cols-2">
         <div>
           <h1 className="text-lg">{company}</h1>
