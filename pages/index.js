@@ -1,26 +1,54 @@
-import Head from 'next/head';
-import Footer from '../components/footer';
+import Container from '../components/container'
+import Projects from '../components/projects'
+import HeroProject from '../components/hero-project'
+import About from '../components/about'
+import History from '../components/history'
+import Layout from '../components/layout'
+import { getAllProjects } from '../lib/api'
+import Head from 'next/head'
+import { CMS_NAME } from '../lib/constants'
 
-export default function Home() {
-  const YEAR = new Date().getFullYear();
+export default function Index({ allProjects }) {
+  const heroProject = allProjects[0]
+  const moreProjects = allProjects
   return (
-    <div className="bg-white dark:bg-black">
-      <div className="container mx-auto px-8 py-20 h-screen">
-          <h1 className="text-slate-900 dark:text-white text-2xl mt-20">Paras Praj</h1>
-          <p className="text-slate-500 dark:text-slate-400 mt-20">
-            I enjoy building software and solving problems.
-          </p>
-          <p className="text-slate-500 dark:text-slate-400 mt-2">
-            More content coming soon.
-          </p>
-          <ul className="list-disc text-slate-500 dark:text-slate-400 mt-20 pl-5" >
-            <li><a href="https://github.com/paraspraj" rel="noreferrer" target="_blank">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/paraspraj" rel="noreferrer" target="_blank">LinkedIn</a></li>
-          </ul>
-          <p className="text-slate-500 dark:text-slate-400 mt-10 text-sm">
-            &copy; {YEAR} Paras Praj
-          </p>
-      </div>
-    </div>
-  );
+    <>
+      <Layout>
+        <Head>
+          <title>ParasPraj.</title>
+        </Head>
+        <Container>
+          {/* <Intro /> */}
+          {heroProject && (
+            <HeroProject
+              title={heroProject.title}
+              coverImage="/assets/blog/hello-world/cover.jpg"
+              date={heroProject.date}
+              author={heroProject.author}
+              slug={heroProject.slug}
+              excerpt={heroProject.excerpt}
+            />
+          )}
+          <About />
+          <History />
+          {/* {moreProjects.length > 0 && <Projects projects={moreProjects} />} */}
+        </Container>
+      </Layout>
+    </>
+  )
+}
+
+export async function getStaticProps() {
+  const allProjects = getAllProjects([
+    'title',
+    'date',
+    'slug',
+    'author',
+    'coverImage',
+    'excerpt',
+  ])
+
+  return {
+    props: { allProjects },
+  }
 }
