@@ -16,7 +16,7 @@ export default function HeroProject({
             Hello! My name is
           </h3>
           <h1 className="text-center md:text-left text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-            Paras Praj.
+            Paras Praj<span className="text-pink-500">.</span>
           </h1>
           <h4 className="text-center md:text-left text-lg mt-5 ">
             I'm a software engineer who enjoys learning new things, building software, and solving problems.
@@ -42,9 +42,8 @@ export default function HeroProject({
             </Link>
           </p>
         </div>
-        <div>
+        <div className="border-r-8 border-b-8 border-pink-500"> 
           <Image
-            className="rounded-3xl"
             src="/assets/img/headshot-b.jpg"
             alt={`Cover Image for ${title}`}
             layout="responsive"
