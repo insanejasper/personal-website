@@ -15,7 +15,7 @@ export default function HeroProject({
           <h3 className="text-center md:text-left text-3xl mt-10 md:mt-0 font-serif">
             Hello! My name is
           </h3>
-          <h1 className="text-center md:text-left text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
+          <h1 className="text-center md:text-left text-7xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
             Paras Praj<span className="text-pink-500">.</span>
           </h1>
           <h4 className="text-center md:text-left text-lg mt-5 ">
