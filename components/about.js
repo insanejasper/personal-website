@@ -17,7 +17,7 @@ export default function About() {
             I'm Paras, a Software Engineer currently working remotely for <a href="https://pagerduty.com" className="underline underline-offset-8 decoration-pink-500 hover:text-pink-500" rel="noreferrer" target="_blank">PagerDuty</a>.
           </h3>
           <p className="text-center md:text-left text-lg mt-5 ">
-            I&apos;ve spent the past 5+ years working across different areas of software engineering; front-end development, back-end development, dev ops, to my current role providing developers tools needed to extend their systems.
+            I&apos;ve spent the past 5+ years working across different areas of software engineering; front-end development, back-end development, dev ops, to my current role providing developers the tools needed to extend their systems.
           </p>
           <p className="text-center md:text-left text-lg mt-5 ">
             Nowadays I spend my time coding, learning, researching, and collaborating.

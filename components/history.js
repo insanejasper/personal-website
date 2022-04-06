@@ -59,11 +59,11 @@ export default function History() {
 
 function HistoryItem({index, company, title, start, end, descriptions}) {
   return (
-    <div className={`bg-neutral-200 dark:bg-neutral-800 p-6 mb-12 border-r-4 border-b-4 border-pink-500`}>
+    <div className={`bg-neutral-200 dark:bg-neutral-800 p-6 mb-12 ${(index % 2 === 0) ? 'border-r-4' : 'border-l-4'} border-pink-500`}>
       <div className="grid grid-cols-2 mb-5">
         <div>
           <h1 className="text-2xl">{company}</h1>
-          <p className="text-sm">{title}</p>
+          <p className="text-sm text-pink-500">{title}</p>
         </div>
         <div className="text-right text-2xl">
           {start} {end ? '-' : '~'} {end}
