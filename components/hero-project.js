@@ -44,7 +44,7 @@ export default function HeroProject({
         </div>
         <div className="border-r-8 border-b-8 border-pink-500"> 
           <Image
-            src="/assets/img/headshot-b.jpg"
+            src="/assets/img/headshot.jpg"
             alt={`Cover Image for ${title}`}
             layout="responsive"
             width={1240}
