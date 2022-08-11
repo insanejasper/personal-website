@@ -1,10 +1,21 @@
 export default function History() {
   const workHistory = [
     {
+      name: 'HashiCorp',
+      title: 'Software Engineer',
+      start: '2022',
+      end: null,
+      descriptions: [
+        // 'Collaborated closely across many different product development teams to validate and pressure test our design, APIs, and user/developer experience.',
+        // 'Displayed leadership on various multi-team projects including re-platforming legacy Ember code to React as well as deploying our services to the EU service region.',
+        // 'Coached and mentored other engineers/interns at various levels to drive technical excellence within the team.'
+      ]
+    },
+    {
       name: 'PagerDuty',
       title: 'Software Engineer',
       start: '2020',
-      end: null,
+      end: '2022',
       descriptions: [
         'Collaborated closely across many different product development teams to validate and pressure test our design, APIs, and user/developer experience.',
         'Displayed leadership on various multi-team projects including re-platforming legacy Ember code to React as well as deploying our services to the EU service region.',
