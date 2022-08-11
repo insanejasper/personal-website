@@ -14,7 +14,7 @@ export default function About() {
         </div>
         <div className="col-span-2">
           <h3 className="text-center md:text-left text-4xl mt-5 mb-10">
-            I'm Paras, a Software Engineer currently working remotely for <a href="https://pagerduty.com" className="underline underline-offset-8 decoration-pink-500 hover:text-pink-500" rel="noreferrer" target="_blank">PagerDuty</a>.
+            I'm Paras, a Software Engineer currently working remotely for <a href="https://hashicorp.com" className="underline underline-offset-8 decoration-pink-500 hover:text-pink-500" rel="noreferrer" target="_blank">HashiCorp</a>.
           </h3>
           <p className="text-center md:text-left text-lg mt-5 ">
             I&apos;ve spent the past 5+ years working across different areas of software engineering; front-end development, back-end development, dev ops, to my current role providing developers the tools needed to extend their systems.
